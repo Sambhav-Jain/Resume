@@ -2,7 +2,10 @@ body{
     font-family: sans-serif;
     margin: 0px;
 }
-                                        /* home section */
+.highlight{
+    color: #0b8176;
+} 
+                                      /* home section */
 /* Page header */
 #page_header{
     background-image: url(../assets/images/macbook_mouse.jpg);
@@ -38,8 +41,6 @@ nav li a:hover {
 #download a{
     transition: 500ms ease-in-out;
     font-weight: 700;
-    color:#000;
-    transition: unset;
 }
 #download a:hover{
     border-bottom: none;
@@ -110,6 +111,9 @@ section:nth-child(even){
     box-shadow:1px 1px 10px 2px lightgrey;
 }
 /*Description*/
+.detail{
+    display: inline;
+}
 .details,#about p{
     font-family: Arial,Helvetica,sans-serif;
     padding: 10px;
@@ -122,9 +126,9 @@ section:nth-child(even){
     text-align: justify;
     color: gray;
 }
-#about p span{
+/* #about p span{
     color:#2857a4;
-}
+} */
 /*Section heading*/
 .section-heading{
     padding:20px 10px 10px;
@@ -388,4 +392,37 @@ h3.footer span{
     margin-top: 0;
     font-weight: 700;
     color:#777;
+}
+                                                /* Responsiveness */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .detail{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .detail{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .detail{
+        display: inline;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .detail{
+        display: inline;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .detail{
+        display: inline;
+    }
 }
